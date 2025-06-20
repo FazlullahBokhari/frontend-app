@@ -55,3 +55,7 @@ dist/
 # Test & coverage
 /coverage
 testem.log
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
