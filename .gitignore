@@ -40,3 +40,18 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+node_modules/
+dist/
+.env
+.idea/
+
+# Project environment
+.env
+
+# Sass cache
+.sass-cache/
+
+# Test & coverage
+/coverage
+testem.log
