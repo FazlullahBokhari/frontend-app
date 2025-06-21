@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: fazlullahb/frontend-app:latest
+    container_name: frontend-app
+    ports:
+      - "4200:80"  # Angular is served via Nginx (port 80 inside container)
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+  backend:
+    image: fazlullahb/backend-app:latest
+    container_name: backend-app
+    ports:
+      - "8080:8008"  # Spring Boot default port
+    restart: unless-stopped
